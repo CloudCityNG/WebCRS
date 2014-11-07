@@ -1,0 +1,2 @@
+Just for information. Assets folder will have images and graphic files
+required by the project.
