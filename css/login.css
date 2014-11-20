@@ -1,0 +1,11 @@
+/*css file for styling the pages*/
+body{
+    font-family: consolas;
+    background: #ccc;
+}
+p{
+    text-align: center;
+}
+#main{
+    padding: 20%;
+}
