@@ -1,0 +1,176 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+
+<style>
+body{
+background-color:#CCCCCC;
+}
+header{
+	width:100%;
+	height:10%;
+
+	}
+header img{
+	width:20%;
+	display:inline;
+	float:left;
+}
+header ul{
+	width:80%;
+	list-style-type:none;
+	margin-top:10px;
+}
+header ul li a{
+	text-decoration:none;
+	color:#CCCCCC;
+	padding:5px 10px;
+	background:#0066FF;
+	margin-left:1px;
+	display:inline;
+	float:left;
+}
+a:hover{
+	color:#009;
+}
+header div{
+	width:20%;
+	display:right;
+	vertical-align:bottom;
+	float:right;
+	text-decoration:underline;
+	color:#00C;	
+}
+hr{
+	color:#06F;
+	border-style:solid;
+	border-width:2px;
+	border-radius:2px;
+	clear:both;	
+}
+
+aside{
+color:#00C;
+display:block;
+float:left;
+padding:10px;
+}
+
+section{
+	padding:10px;
+	
+}
+section img#core_course{
+	display:block;
+	float:left;
+	width:10%;
+	height:50px;
+	background:#6F3;
+	color:#CCCCCC;
+	border-radius:2px;
+	padding:10px;
+	border-radius:5px;
+}
+section #single_courseinfo{
+	width:90%;
+	height:100%;
+	color:#F00;
+	}
+
+#end{
+	clear:both;
+	height:15%;
+	width:100%;
+	padding:10px;	
+}
+#register{
+	background-color:#0033CC;
+	border:0px;
+	border-radius:3px;
+	color:#CCC;
+	padding:5px 18px;
+}
+</style>
+</head>
+
+<body>
+<header>	
+	<img src="crs logo.png"/>
+    <ul>
+    	<li><a href="#">Username</a></li>
+        <li><a href="#">Courses</a></li>
+        <li><a href="#">Help</a></li>
+    </ul> 
+    
+	<div>Logout  </div>   
+       <hr />
+</header>
+
+<aside>
+
+ 
+ 
+<table>
+ <div id="filter_course">
+  <th> FILTER COURSE</th>
+  <tr>
+    	<td>Core</td>
+    	<td><input type="checkbox" /></td>
+	</tr>
+    <tr>
+    	<td>General</td>
+    	<td><input type="checkbox" /></td>
+    </tr>
+    <tr>
+    	<td>Elective</td>
+    	<td><input type="checkbox" /></td>
+    </tr>
+  <table>
+ </div>
+ <hr />
+ 
+ <div id="filter_year">
+  <table>
+ 	<th> FILTER YEAR</th>
+ 	<tr>
+    	<td>First</td><td><input type="checkbox" /></td>
+    </tr>
+    <tr>
+    	<td>Second</td><td><input type="checkbox" /></td>
+    </tr>
+    <tr>
+    	<td>Third</td><td><input type="checkbox" /></td>
+    </tr>
+    <tr>
+   	  <td>Fourth</td><td><input type="checkbox" /></td>
+    </tr>
+   </table>
+ </div>
+<hr/>  
+</aside>
+
+<section>
+		<img id="core_course"alt="CORE"/>
+		<div id="single_courseinfo">
+    		CSC 360<br />
+        	Web tech<br />
+        	 
+        		3 Credits
+            	Pick this course
+            <input id="check_course" type="checkbox" name="check_course" />
+                 	
+  		</div>	
+</section>
+
+<div id="end">
+		<input id="register" type="button" value="Register" name="button_register"/>
+	</div>
+
+</body>
+</html>
+
+		
+    
+    
