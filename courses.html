@@ -1,185 +1,53 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Untitled Document</title>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Courses Page</title>
+		<link rel="stylesheet" type="text/css" href="css/course.css"/>
+	</head>
 
-<style>
-body{
-background-color:#CCCCCC;
-}
-
-header{
-    width:100%;
-    height:10%;
-	}
-
-header img{
-	width:80%;
-	width:50px;
-	display:inline;
-	float:left;
-	height:50px;
-	border:1px solid red;
-}
-header ul{
-	
-	list-style-type:none;
-	padding-top:25px;
-	padding-bottom:10px;
-	border:1px solid red;
-	margin-left:15%;
-	margin-right:50%;
-	
-}
-header ul li a{
-	text-decoration:none;
-	color:#CCCCCC;
-	padding:5px 10px;
-	background:#0066FF;
-	margin-left:1px;
-	display:inline;
-	float:left;
-	border:1px solid red;
-}
-a:hover{
-	color:#009;
-}
-
-header #logout{
-	width:20%;
-	vertical-align:bottom;
-	float:right;
-	text-decoration:underline;
-	color:#00C;	
-	padding-bottom:20px;
-	margin-top:-20px;
-}
- hr{
-	color:#06F;
-	border-style:solid;
-	border-width:2px;
-	border-radius:2px;
-	clear:both;
-}
-
-section{
-	float:left;	
-	border:1px solid red;
-	width:70%;
-	margin-bottom:20px;
-	margin-top:20px;
-}
-section .courseinfo{
-	padding:10px;
-	border:1px solid red;
-	padding-left:5px;
-	height:100px;
-	width:400px;
-	margin:	10px;
-}
-
-
-section .course_pic{
-	display:block;
-	float:left;
-	width:15%;
-	
-	height:100%;
-	background:#6F3;
-	color:#000;
-	border-radius:2px;
-	padding-bottom::10px;
-	border-radius:5px;
-	border:1px solid red;
-	overflow:visible;
-}
-section .single_courseinfo{
-	
-	height:100%;
-	color:#F00;
-	border:1px solid red;
-	padding-bottom::10px;
-	float:left;
-	margin-left:5px;
-	width:80%;
-	position:relative;
-	padding-left:5px;
-	}
-section #credit{
-	  position:absolute;
- 	 bottom:5px;
-		border:1px solid red;
-}
-aside{
-	height:100%;
-	width:20%;
-	margin-top:20px;
-	display:block;
-	float:right;
-	border:1px solid red;
-	padding:10px;
-}
-</style>
-</head>
-
-<body>
-<header>
-<div id="tabs">	
-
-	<img src="crs logo.png"/>
-    <ul>
-    	<li><a href="#">Username</a></li>
-        <li><a href="#">Courses</a></li>
-        <li><a href="#">Help</a></li>
-    </ul> 
-    
-	<div id="logout">Logout  </div>   
-       <hr />
-</header>
-
-
-
-<section>
-<div class="courseinfo">
-		<div class="course_pic"><img id="core_course"alt="CORE COURSE"/></div>	
-		<div class="single_courseinfo">
-		
-    		CSC 360<br />
-        	Web tech<br />
-        	  <div id="credit">
-        		3 Credits
-            	Pick this course
-            <input id="check_course" type="checkbox" name="check_course" />
-             </div>    	
-  		</div>	
+	<body>
+		<div id="header">	
+			<img src="assets/crs logo.png" alt="CRS Logo"/>
+			<ul>
+				<li><a href="#">Username</a></li>
+				<li><a href="#">Courses</a></li>
+				<li><a href="#">Help</a></li>
+			</ul>
+			<div id="logout"><a href="index.html">Logout</a></div>   
 		</div>
-		
-<div class="courseinfo">
-		<div class="course_pic"><img id="core_course"alt="CORE COURSE"/></div>	
-		<div class="single_courseinfo">
-    		CSC 360<br />
-        	Web tech<br />
-        	 <div id="credit">
-        		3 Credits
-            	Pick this course
-				<input id="check_course" type="checkbox" name="check_course" />
-				</div>
-            
-                 	
-  		</div>	
-		</div>		
-</section>
+		<hr />
 
-<aside>
-<input id="search" type="text" name="search" />
-</aside>
+		<div id="section">
+			<div class="courseinfo">
+				<div class="course_pic"><p>CORE COURSE</p></div>	
+				<div class="single_courseinfo">	
+					CSC 360<br/>
+					Web tech<br/>
+					<div class="credit">
+						3 Credits
+					</div>    	
+				</div>	
+			</div>
+				
+			<div class="courseinfo">
+				<div class="course_pic"><p>CORE COURSE</p></div>	
+				<div class="single_courseinfo">
+					CSC 360<br/>
+					Web tech<br/>
+					<div class="credit">
+						3 Credits
+					</div>
+					
+				</div>	
+			</div>		
+		</div>
 
- <p><hr /> </p>
-</body>
-
-</html>
-
-		
+		<div id="aside">
+			<input id="search" type="text" name="search" />
+		</div>
+		<hr/>
+	</body>
+</html>		
     
     
