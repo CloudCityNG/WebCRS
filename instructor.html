@@ -1,239 +1,97 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Untitled Document</title>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Instructor Page</title>
+		<link rel="stylesheet" type="text/css" href="css/instructor.css"/>
+	</head>
 
-<style>
-body{
-background-color:#CCCCCC;
-}
+	<body>
+		<div id="header">	
+			<img src="assets/crs logo.png" alt="CRS Logo"/>
+			<ul>
+				<li><a href="#">Username</a></li>
+				<li><a href="#">Courses</a></li>
+				<li><a href="#">Help</a></li>
+			</ul>
+			<div id="logout"><a href="index.html">Logout</a></div>   
+		</div>
+		<hr />
 
-header{
-    width:100%;
-    height:10%;
-
-	}
-
-header img{
-	width:80px;
-	display:inline;
-	float:left;
-	height:70px;
-	border:1px solid blue;
-}
-header ul{
-	
-	list-style-type:none;
-	padding-top:25px;
-	padding-bottom:10px;
-	margin-left:15%;
-	margin-right:25%;
-	border:1px solid blue;
-}
-header ul li a{
-	text-decoration:none;
-	color:#CCCCCC;
-	padding:5px 10px;
-	background:#0066FF;
-	margin-left:1px;
-	display:inline;
-	float:left;
-}
-a:hover{
-	color:#009;
-}
-
-header #logout{
-	width:20%;
-	vertical-align:bottom;
-	float:right;
-	text-decoration:underline;
-	color:#00C;	
-	padding-bottom:20px;
-	margin-top:-20px;
-}
- hr{
-	color:#06F;
-	border-style:solid;
-	border-width:2px;
-	border-radius:2px;
-	clear:both;
-	border:1px solid blue;
-}
-
-aside{
-color:#00C;
-display:block;
-float:left;
-
-clear:both;
-width:20%;
-border:1px solid red;
-
-}
-
-aside #select_course{
-	padding:5px;
-	border:1px solid red;
-}
-
-aside #filter_year{
-	border:1px solid red;
-	margin:5px;
-	
-}
-
-section{
-	float:left;	
-	
-	width:65%;
-	padding:5px;
-	margin-left:5px;
-}
-
-section #record_info{
-	
-	width:100%;
-}
-
-section table {
-	width:100%;
-	color:#F00;
-	border-collapse:collapse;
-	table-layout:fixed;
-
-}
-section table td{
-	padding:2px;
-	width:30%;
-}
-
-#first_row{
-	border-bottom:1px solid #FF0000 ;
-	
-}
-#last_row{
-	text-align:right;	
-	border-bottom:1px solid #FF0000 ;
-}
-
-#end{
-	clear:left;
-	height:15%;
-	padding:5px;
-}
-#summary_button{
-	background-color:#0033CC;
-	border:0px;
-	border-radius:8px;
-	color:#CCC;
-	padding:5px 10px;
-}
-#summary{
-	text-align:center;
-}
-</style>
-</head>
-
-<body>
-<header>
-<div id="tabs">	
-
-	<img src="crs logo.png"/>
-    <ul>
-    	<li><a href="#">Username</a></li>
-        <li><a href="#">Courses</a></li>
-        <li><a href="#">Help</a></li>
-    </ul> 
- </div>
-	<div id="logout">Logout  </div>   
-       <hr />
-</header>
-
-<aside>
- <div id="select_course">
- <table>
-  <th> SELECT COURSE</th>
-  <tr>	
-    	<td><select name="course">
-        <option value="crypt">cryptography</option>
-        </select>
-        </td>
-  </tr>  
- </table>
- </div>
- 
- <hr />
- 
- <div id="filter_year">
-  <table>
- 	<th> FILTER YEAR</th>
- 	<tr class="">
-    	<td>First</td><td><input type="checkbox" /></td>
-    </tr>
-    <tr>
-    	<td>Second</td><td><input type="checkbox" /></td>
-    </tr>
-    <tr>
-    	<td>Third</td><td><input type="checkbox" /></td>
-    </tr>
-    <tr>
-   	  <td>Fourth</td><td><input type="checkbox" /></td>
-    </tr>
-   </table>
- </div>
- 
-<hr/>  
-</aside>
-
-<section>
-
-<div id="record_info">      
-  <table id="record_table">
-  
- 	<tr id="first_row">
-    <td>Name</td>
-    <td>Semester</td>
-    <td>Courses taken</td>
-   
-    </tr>
-    
- 	 <tr >
-    	<td>Anush shrestha</td>  
-    	<td>6th</td>
-    	<td>4</td>
-    </tr>
-     <tr >
-    	<td>Anush shrestha</td>  
-    	<td>6th</td>
-    	<td>4</td>
-    </tr>
-    
-     <tr >
-    	<td>Anush shrestha</td>  
-    	<td>6th</td>
-    	<td>4</td>
-    </tr>
-    
-    
-    <tr id="last_row">
-    	<td colspan=3>Total enrollment:3</td>
-    </tr>
-   
-   </table>
-        
-</div>	
-			
-</section>
-
-<div id="end">
-		<p id="summary"><input id="summary_button" type="button" value="Print Summary" name="button_register"/></p>
-	</div>
-
-</body>
-</html>
-
+		<div id="aside">
+			<div id="select_course">
+				<table>
+					<tr>
+						<th> SELECT COURSE</th>
+					</tr>
+					<tr>	
+						<td>
+							<select name="course">
+								<option value="crypt">Cryptography</option>
+							</select>
+						</td>
+					</tr>  
+				</table>
+			</div>
+	 
+		<hr/>
+	 
+		<div id="filter_year">
+			<table>
+				<tr>
+					<th>FILTER YEAR</th>
+				</tr>
+				<tr>
+					<td>First</td><td><input class="check" type="checkbox" /></td>
+				</tr>
+				<tr>
+					<td>Second</td><td><input class="check" type="checkbox" /></td>
+				</tr>
+				<tr>
+					<td>Third</td><td><input class="check" type="checkbox" /></td>
+				</tr>
+				<tr>
+					<td>Fourth</td><td><input class="check" type="checkbox" /></td>
+				</tr>
+			</table>
+		</div>
+	 
+		<hr/>  
+		</div>
 		
+		<div id = "section">
+			<div id="record_info">      
+				<table id="record_table">  
+					<tr id="first_row">
+						<th>Name</th>
+						<th>Semester</th>
+						<th>Courses taken</th>   
+					</tr>
+					<tr >
+						<td>Anush shrestha</td>  
+						<td>6th</td>
+						<td>4</td>
+					</tr>
+					<tr >
+						<td>Anush shrestha</td>  
+						<td>6th</td>
+						<td>4</td>
+					</tr>
+					
+					 <tr >
+						<td>Anush shrestha</td>  
+						<td>6th</td>
+						<td>4</td>
+					</tr>   
+				</table>
+				<p id= "total">Total Enrollment:3</p>
+			</div>			
+		</div>
+
+		<div id="end">
+			<p id="summary"><input id="summary_button" type="button" value="Print Summary" name="button_print"/></p>
+		</div>
+	</body>
+</html>	
     
     
