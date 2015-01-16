@@ -1,67 +1,29 @@
-/*css file for courses page*/
-body{
-background-color:#eeeeee;
-}
-
-#header{
-    width:100%;
-    height:10%;
-}
-
-#header img{
-	width:106px;
-	display:inline;
-	float:left;
-	height:87px;
-}
-#header ul{
-	list-style-type:none;
-	padding-top:25px;
-	padding-bottom:10px;
-	margin-left:15%;
-	margin-right:50%;	
-}
-#header ul li a{
-	text-decoration:none;
-	color:#ffffff;
-	padding:5px 10px;
-	background:#0066ff;
-	margin-left:1px;
-	display:inline;
-	float:left;
-}
-#header #logout{
-	width:20%;
-	vertical-align:bottom;
-	float:right;
-	padding-bottom:20px;
-	margin-top:-20px;
-}
-hr{
-	color:#0066ff;
-	border-style:solid;
-	border-width:2px;
-	border-radius:2px;
-	clear:both;
+#header p{
+	width: 98%;
 }
 p{
 	text-align: center;
 }
+#ccode,#cname{
+	font-weight: bold;
+}
 #section{
+	clear: both;
 	float:left;	
 	width:70%;
-	margin-bottom:20px;
-	margin-top:20px;
+	height: 372px;
+	padding: 5px;
+	margin: 5px;
+	border: 2px #888888 solid;
+	background-color: #f9f9f9;
+	overflow-y: scroll;
 }
 #section .courseinfo{
-	padding:10px;
-	padding-left:5px;
 	height:100px;
-	width:400px;
+	width:100%;
 	margin:	10px;
+	padding: 10px;
 }
-
-
 #section .course_pic{
 	float:left;
 	width:100px;
@@ -69,27 +31,31 @@ p{
 	background:#33cc33;
 	color:#fff;
 	border-radius:7px;
-	border: 0px;
+	border:0px;
 	padding-bottom::10px;
 }
 #section .single_courseinfo{
 	height:100%;
-	color:#ff3333;
-	padding-bottom::10px;
-	float:left;
-	margin-left:5px;
-	width:250px;
-	position:relative;
-	padding-left:5px;
+	color:#0066ff;
+	margin-left:110px;
+	padding-left: 10px;
+	width:760px;
+	background-color: #ffffff;
+	border-radius: 7px;
 }
-#section .credit{
-	position:absolute;
-	bottom:5px;
+#section .single_courseinfo p{
+	text-align: left;
+	display:inline;
+}
+#search{
+	width: 75%;
 }
 #aside{
 	height:100%;
 	width:20%;
-	margin-top:20px;
+	margin:5px;
+	border: 2px solid #888888;
+	background-color: #f9f9f9;
 	display:block;
 	float:right;
 	padding:10px;
