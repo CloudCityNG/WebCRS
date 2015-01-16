@@ -1,27 +1,45 @@
 /*css file for styling the pages*/
 body{
-    font-family: consolas;
-    background: #ccc;
+    background: #eeeeee;
+	font-family: Consolas;
 }
 p{
     text-align: center;
 }
+h1,h2, #info{
+	color:#0066ff;
+	text-align: left;
+}
+#intro{
+	margin-top: 8%;
+	margin-left: 5%;
+	width: 50%;
+	float:left;
+}
 #main{
-    padding: 5%;
+	padding: 5%;
+	margin-left:60%;
+	margin-top: 8%;
+	border: 2px #888888 solid;
+	width: 250px;
+	background-color: #f9f9f9;
 }
 #signin{
 	border-radius: 2px;
 	background-color: #0066ff ;
 	border: 0px;
-	width: 55px;
-	height: 25px;
+	width: 250px;
+	height: 30px;
 	color: #fff;
+	font-family: Consolas;
+	font-size: 16px;
 }
 .textbox { 
+	font-family: Consolas;
+	font-size: 16px;
     background: white; 
     border: 1px solid #0066ff; 
-    border-radius: 5px; 
-    box-shadow: 0 0 5px 3px #0066ff; 
+    border-radius: 2px; 
     color: #666; 
     outline: none; 
     height:25px; 
