@@ -1,3 +1,6 @@
 Just for information. Assets folder will have images and graphic files
-required by the project.
--crs_logo.png
+ required by the project.
+
+-crs logo big.png
+-crs logo.png
+-uclid.png
