@@ -4,19 +4,23 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<title>Instructor Page</title>
 		<link rel="stylesheet" type="text/css" href="css/instructor.css"/>
+		<link rel="stylesheet" type="text/css" href="css/headers.css"/>
 	</head>
 
 	<body>
 		<div id="header">	
-			<img src="assets/crs logo.png" alt="CRS Logo"/>
+			<div id="logo">
+				<img src="assets/crs logo.png" alt="CRS Logo"/>
+			</div>
 			<ul>
 				<li><a href="#">Username</a></li>
 				<li><a href="#">Courses</a></li>
-				<li><a href="#">Help</a></li>
-			</ul>
-			<div id="logout"><a href="index.html">Logout</a></div>   
+				<li><a href="#">Support</a></li>
+			</ul>  
+			<p>Welcome to the Instructor Page. Here you can see the list of candidates enrolled in your courses.
+			You can see the basic details of each student and the overall class size. You may print the summary
+			if you wish. You can filter students by "year".</p>
 		</div>
-		<hr />
 
 		<div id="aside">
 			<div id="select_course">
@@ -26,7 +30,7 @@
 					</tr>
 					<tr>	
 						<td>
-							<select name="course">
+							<select id="course">
 								<option value="crypt">Cryptography</option>
 							</select>
 						</td>
@@ -34,29 +38,25 @@
 				</table>
 			</div>
 	 
-		<hr/>
-	 
-		<div id="filter_year">
-			<table>
-				<tr>
-					<th>FILTER YEAR</th>
-				</tr>
-				<tr>
-					<td>First</td><td><input class="check" type="checkbox" /></td>
-				</tr>
-				<tr>
-					<td>Second</td><td><input class="check" type="checkbox" /></td>
-				</tr>
-				<tr>
-					<td>Third</td><td><input class="check" type="checkbox" /></td>
-				</tr>
-				<tr>
-					<td>Fourth</td><td><input class="check" type="checkbox" /></td>
-				</tr>
-			</table>
-		</div>
-	 
-		<hr/>  
+			<div id="filter_year">
+				<table>
+					<tr>
+						<th>FILTER YEAR</th>
+					</tr>
+					<tr>
+						<td>First</td><td><input class="check" type="checkbox" /></td>
+					</tr>
+					<tr>
+						<td>Second</td><td><input class="check" type="checkbox" /></td>
+					</tr>
+					<tr>
+						<td>Third</td><td><input class="check" type="checkbox" /></td>
+					</tr>
+					<tr>
+						<td>Fourth</td><td><input class="check" type="checkbox" /></td>
+					</tr>
+				</table>
+			</div>  
 		</div>
 		
 		<div id = "section">
@@ -83,15 +83,59 @@
 						<td>6th</td>
 						<td>4</td>
 					</tr>   
+					<tr >
+						<td>Anush shrestha</td>  
+						<td>6th</td>
+						<td>4</td>
+					</tr>   
+					<tr >
+						<td>Anush shrestha</td>  
+						<td>6th</td>
+						<td>4</td>
+					</tr>   <tr >
+						<td>Anush shrestha</td>  
+						<td>6th</td>
+						<td>4</td>
+					</tr>   
+					<tr >
+						<td>Anush shrestha</td>  
+						<td>6th</td>
+						<td>4</td>
+					</tr>
+					<tr >
+						<td>Anush shrestha</td>  
+						<td>6th</td>
+						<td>4</td>
+					</tr>
+					
+					 <tr >
+						<td>Anush shrestha</td>  
+						<td>6th</td>
+						<td>4</td>
+					</tr>   
+					<tr >
+						<td>Anush shrestha</td>  
+						<td>6th</td>
+						<td>4</td>
+					</tr>   
+					<tr >
+						<td>Anush shrestha</td>  
+						<td>6th</td>
+						<td>4</td>
+					</tr>   <tr >
+						<td>Anush shrestha</td>  
+						<td>6th</td>
+						<td>4</td>
+					</tr> 
 				</table>
-				<p id= "total">Total Enrollment:3</p>
+				<p id= "total">Total Enrollment:12</p>
 			</div>			
 		</div>
-
 		<div id="end">
 			<p id="summary"><input id="summary_button" type="button" value="Print Summary" name="button_print"/></p>
 		</div>
+		<div id="footer">
+			<p>&copy;Dixit Bhatta, Anush Shrestha 2015. Powered By:<img src="assets/uclid.png" alt="uclid"/></p>
+		</div>
 	</body>
-</html>	
-    
-    
+</html>
