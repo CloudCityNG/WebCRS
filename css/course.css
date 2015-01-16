@@ -1,0 +1,62 @@
+#header p{
+	width: 98%;
+}
+p{
+	text-align: center;
+}
+#ccode,#cname{
+	font-weight: bold;
+}
+#section{
+	clear: both;
+	float:left;	
+	width:70%;
+	height: 372px;
+	padding: 5px;
+	margin: 5px;
+	border: 2px #888888 solid;
+	background-color: #f9f9f9;
+	overflow-y: scroll;
+}
+#section .courseinfo{
+	height:100px;
+	width:100%;
+	margin:	10px;
+	padding: 10px;
+}
+#section .course_pic{
+	float:left;
+	width:100px;
+	height:100%;
+	background:#33cc33;
+	color:#fff;
+	border-radius:7px;
+	border:0px;
+	padding-bottom::10px;
+}
+#section .single_courseinfo{
+	height:100%;
+	color:#0066ff;
+	margin-left:110px;
+	padding-left: 10px;
+	width:760px;
+	background-color: #ffffff;
+	border-radius: 7px;
+}
+#section .single_courseinfo p{
+	text-align: left;
+	display:inline;
+}
+#search{
+	width: 75%;
+}
+#aside{
+	height:100%;
+	width:20%;
+	margin:5px;
+	border: 2px solid #888888;
+	background-color: #f9f9f9;
+	display:block;
+	float:right;
+	padding:10px;
+}

@@ -1,0 +1,51 @@
+body{
+	background-color:#eeeeee;
+	font-family: Consolas;
+}
+#logo{
+	float:left;
+	height:59px;
+	width:106px;
+}
+#header p{
+	font-family: Arial;
+	font-weight: bold;
+	clear:left;
+	color: #f33;
+	text-align: left;
+	margin:5px;
+	padding: 5px;
+	border-radius: 5px;
+	background-color: #f9f9f9;
+}
+#header ul{	
+	list-style-type:none;
+	padding-top:2%;
+	padding-bottom: 2%;
+	margin-left:15%;
+	margin-right:25%;
+}
+#header ul li a{
+	text-decoration:none;
+	color:#ffffff;
+	font-size: 16px;
+	text-align: center;
+	width:120px;
+	height:25px;
+	padding:5px 10px;
+	background:#0066ff;
+	margin-left:1px;
+	display:inline;
+	float:left;
+}
+#footer{
+	color: #0066ff;
+	clear: both;
+	text-align: center;
+	padding: 5px;
+	background: #f9f9f9;
+}
+#footer img{
+	height: 25px;
+	width: 67px;
+}

@@ -1,19 +1,28 @@
 <!--Main HTML file for the project, others can be added later-->
 <!--This is the login page generated for the CRS-->
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <title>Welcome to CRS</title>
-    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <link rel="stylesheet" type="text/css" href="css/login.css"/>
+	<script type="text/javascript" src="js/main.js"></script> 
   </head>
   <body>
+	<div id="intro">
+		<h1>Welcome to CRS!</h1>
+		<h2>Your one-step solution to manage Course Registrations and review Student Enrollment</h2>
+		<p id="info">CRS allows you to manage your registration process using a simple interface and enables instructors to review their 
+		course enrollments at a single click</p>
+	</div>
     <div id="main">
       <div id = "logo">
-        <p><img src="assets/crs_logo.png" alt="CRS Logo"></p>
+        <p><img src="assets/crs logo big.png" alt="CRS Logo"/></p>
       </div>
       <div id="inputs">
-        <p><input type="text" name="uname" value="username" class="textbox""></p>
-        <p><input type="password" id="pword" name="pword" class="textbox"></p>
-        <p><input type="submit" name="signin" id="signin" value="Sign In"></p>
+		<form name="login" method="post">
+        <p><input type="text" name="uname" id="uname" value="username" class="textbox"/></p>
+        <p><input type="password" id="pword" name="pword" value="password" class="textbox"/></p>
+        <p><input type="submit" name="signin" id="signin" value="Sign In"/></p>
       </div>
     </div>
   </body>

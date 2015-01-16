@@ -1,0 +1,84 @@
+#header p{
+	width: 94%;
+}
+#aside{
+	color:#0066ff;
+	display:block;
+	float:left;
+	clear:both;
+	width:20%;
+}
+p{
+	text-align: center;
+}
+#aside #filter_course,#filter_year{
+	padding:5px;
+	margin:5px;
+	border: 2px #888888 solid;
+	width: 100%;
+	background-color: #f9f9f9;
+}
+#section{
+	float:left;	
+	width:70%;
+	height: 280px;
+	padding: 5px;
+	margin: 5px 0px 5px 60px;
+	border: 2px #888888 solid;
+	background-color: #f9f9f9;
+	overflow-y: scroll;
+}
+#section .courseinfo{
+	height:100px;
+	width:100%;
+	margin:	10px;
+	padding: 10px;
+}
+#section .course_pic{
+	float:left;
+	width:100px;
+	height:100%;
+	background:#33cc33;
+	color:#fff;
+	border-radius:7px;
+	border:0px;
+	padding-bottom::10px;
+}
+#section .single_courseinfo{
+	height:100%;
+	color:#0066ff;
+	margin-left:110px;
+	padding-left: 10px;
+	width:780px;
+	background-color: #ffffff;
+	border-radius: 7px;
+}
+#section .single_courseinfo p{
+	text-align: left;
+	display:inline;
+}
+#ccode,#cname{
+	font-weight: bold;
+}
+td{
+	width:120px;
+}
+th{
+	text-align:left;
+}
+#end{
+	clear:both;
+	height:15%;
+	width:100%;
+	padding:10px;	
+}
+#register{
+	background-color:#0066ff;
+	font-family: Consolas;
+	font-size: 16px;
+	border:0px;
+	width: 140px;
+	height: 40px;
+	border-radius:3px;
+	color:#fff;
+}
