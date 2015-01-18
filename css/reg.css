@@ -2,7 +2,7 @@
 	width: 94%;
 }
 #aside{
-	color:#0066ff;
+	color:#888;
 	display:block;
 	float:left;
 	clear:both;
@@ -11,7 +11,7 @@
 p{
 	text-align: center;
 }
-#aside #filter_course,#filter_year{
+#info, #aside #filter_course,#filter_year{
 	padding:5px;
 	margin:5px;
 	border: 2px #888888 solid;
@@ -20,19 +20,22 @@ p{
 }
 #section{
 	float:left;	
-	width:70%;
-	height: 280px;
-	padding: 5px;
+	width:74%;
+	height: 369px;
+	padding: 0px;
 	margin: 5px 0px 5px 60px;
 	border: 2px #888888 solid;
+	border-right: 0px;
+	border-left: 0px;
 	background-color: #f9f9f9;
 	overflow-y: scroll;
 }
 #section .courseinfo{
 	height:100px;
-	width:100%;
+	width:90%;
 	margin:	10px;
-	padding: 10px;
+	margin-left: 35px;
+	padding: 5px;
 }
 #section .course_pic{
 	float:left;
@@ -46,7 +49,7 @@ p{
 }
 #section .single_courseinfo{
 	height:100%;
-	color:#0066ff;
+	color:#888;
 	margin-left:110px;
 	padding-left: 10px;
 	width:780px;
@@ -57,7 +60,7 @@ p{
 	text-align: left;
 	display:inline;
 }
-#ccode,#cname{
+.ccode,.cname{
 	font-weight: bold;
 }
 td{
@@ -65,12 +68,6 @@ td{
 }
 th{
 	text-align:left;
-}
-#end{
-	clear:both;
-	height:15%;
-	width:100%;
-	padding:10px;	
 }
 #register{
 	background-color:#0066ff;
@@ -80,5 +77,7 @@ th{
 	width: 140px;
 	height: 40px;
 	border-radius:3px;
+	margin-top: 9px;
+	margin-bottom:0px;
 	color:#fff;
 }
