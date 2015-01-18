@@ -2,14 +2,14 @@
 	width: 96%;
 }
 #aside{
-	color:#0066ff;
+	color:#888;
 	display:block;
 	float:left;
 	clear:both;
 	width:20%;
 }
 
-#aside #select_course,#filter_year{
+#info, #aside #select_course,#filter_year{
 	padding:5px;
 	margin:5px;
 	border: 2px #888888 solid;
@@ -22,19 +22,21 @@
 	padding:5px;
 	margin:5px 5px 15px 60px;
 	border: 2px #888888 solid;
-	width: 72%;
-	height: 280px;
+	border-left: 0px;
+	border-right: 0px;
+	width: 74%;
+	height: 355px;
 	background-color: #f9f9f9;
 	overflow-y: scroll;
 }
 
 #section #record_info{
 	margin: 10px;
-	width:100%;
+	margin-left: 55px;
+	width:95%;
 }
 #section table {
 	width:95%;
-	color:#0066ff;
 	text-align: center;
 	border-collapse:collapse;
 	table-layout:fixed;
@@ -46,16 +48,21 @@
 	border-radius: 5px;
 	width:30%;
 	background-color: #ffffff;
+	color:#888888;
 }
 #section table th{
 	padding:5px;
 	border-radius: 5px;
-	background-color: #eeeeee;
+	background-color: #33cc33;
+	color: #ffffff;
 }
 
 #total{
-	text-align:center;
-	color: #0066ff;
+	border-radius: 5px;
+	background-color: #33cc33;
+	color:#ffffff;
+	width: 200px;
+	padding: 5px;
 }
 #course{
 	font-family: Consolas;
@@ -68,12 +75,7 @@
 #aside td{
 	width: 250px;;
 }
-#end{
-	clear:left;
-	height:15%;
-	padding:5px;
-}
-#summary_button{
+#summary{
 	background-color:#0066ff;
 	border:0px;
 	width:140px;
@@ -82,8 +84,9 @@
 	font-size:16px;
 	border-radius:2px;
 	color:#ffffff;
-	padding:5px 10px;
+	margin-bottom: 3px;
+	padding:5px;
 }
-#summary{
+p{
 	text-align:center;
 }

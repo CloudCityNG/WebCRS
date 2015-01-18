@@ -12,17 +12,19 @@
 			<div id="logo">
 				<img src="assets/crs logo.png" alt="CRS Logo"/>
 			</div>
+			<h5>Your one-step solution to manage Course Registrations and view Student Enrollment</h5>
 			<ul>
 				<li><a href="#">Username</a></li>
 				<li><a href="#">Courses</a></li>
 				<li><a href="#">Support</a></li>
 			</ul>
-			<p>Welcome to the Registration Page. A list of available courses is provided below. Pick from the available courses
-			by checking alongside "Pick this course" and click "Register". All validation will be done automatically and the 
-			requirements you are missing will be displayed.</p>
 		</div>
-
+		
 		<div id="aside">
+			<div id="info">
+				<p>Welcome to the Registration Page. Pick from the available courses
+				by checking alongside "Pick this course" and click "Register".</p>
+			</div>
 			<div id="filter_course">
 				<table>
 					<tr>
@@ -63,13 +65,13 @@
 				</table>
 			</div> 
 		</div>
-
+		
 		<div id="section">
 			<div class="courseinfo">
 				<div class="course_pic"><p>CORE <br/>COURSE</p></div>	
 				<div class="single_courseinfo">
-					<p>CSC 353</p><br/>
-					<p>Web Technologies</p><br/>
+					<p class="ccode">CSC 353</p><br/>
+					<p class="cname">Web Technologies</p><br/>
 					<p>It deals with HTML, CSS, JS, XML and DOM concepts</p><br/>
 					<p>Credits: 3 Credits</p><br/>
 					<p>Pick this course:<input type="checkbox" name="check_course" /></p>    	
@@ -78,8 +80,8 @@
 			<div class="courseinfo">
 				<div class="course_pic"><p>CORE <br/>COURSE</p></div>	
 				<div class="single_courseinfo">
-					<p>CSC 354</p><br/>
-					<p>Real Time System</p><br/>
+					<p class="ccode">CSC 354</p><br/>
+					<p class="cname">Real Time System</p><br/>
 					<p>It deals with Real Time Systems, their theory and applications</p><br/>
 					<p>Credits: 3 Credits</p><br/>
 					<p>Pick this course:<input type="checkbox" name="check_course" /></p>    	
@@ -89,8 +91,8 @@
 			<div class="courseinfo">
 				<div class="course_pic"><p>ELECTIVE<br/>COURSE</p></div>	
 				<div class="single_courseinfo">
-					<p>CSC 360</p><br/>
-					<p>Net Centric Computing</p><br/>
+					<p class="ccode">CSC 360</p><br/>
+					<p class="cname">Net Centric Computing</p><br/>
 					<p>It deals with ASP technology and its successor ASP.NET</p><br/>
 					<p>Credits: 3 Credits</p><br/>
 					<p>Pick this course:<input type="checkbox" name="check_course" /></p>    	
@@ -99,17 +101,15 @@
 			<div class="courseinfo">
 				<div class="course_pic"><p>GENERAL<br/>COURSE</p></div>	
 				<div class="single_courseinfo">
-					<p>MTH 104</p><br/>
-					<p>Calculus and Analytical Geometry</p><br/>
+					<p class="ccode">MTH 104</p><br/>
+					<p class="cname">Calculus and Analytical Geometry</p><br/>
 					<p>It deals with Multivariate Calculus, Conic Sections and Differential Equations</p><br/>
 					<p>Credits: 3 Credits</p><br/>
 					<p>Pick this course:<input type="checkbox" name="check_course" /></p>    	
 				</div>		
 			</div>
 		</div>
-		<div id="end">
-				<p><input id="register" type="button" value="Register" name="button_register"/></p>
-		</div>
+		<p><input id="register" type="button" value="Register" name="button_register"/></p>
 		<div id="footer">
 			<p>&copy;Dixit Bhatta, Anush Shrestha 2015. Powered By:<img src="assets/uclid.png" alt="uclid"/></p>
 		</div>

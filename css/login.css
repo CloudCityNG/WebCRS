@@ -43,5 +43,6 @@ h1,h2, #info{
     color: #666; 
     outline: none; 
     height:25px; 
-    width: 250px; 
-} 
+    width: 238px; 
+    padding: 5px;
+}

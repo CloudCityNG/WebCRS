@@ -2,28 +2,35 @@ body{
 	background-color:#eeeeee;
 	font-family: Consolas;
 }
+#header{
+	border-radius: 5px;
+	padding: 10px;
+	background-color: #f9f9f9;
+}
 #logo{
 	float:left;
-	height:59px;
-	width:106px;
 }
-#header p{
+#logo img{
+	padding: 10px;
+}
+#info p{
 	font-family: Arial;
-	font-weight: bold;
-	clear:left;
-	color: #f33;
+	color: #888;
 	text-align: left;
 	margin:5px;
 	padding: 5px;
-	border-radius: 5px;
-	background-color: #f9f9f9;
+	letter-spacing: 1.5px;
 }
 #header ul{	
 	list-style-type:none;
-	padding-top:2%;
+	padding-top:1%;
 	padding-bottom: 2%;
 	margin-left:15%;
 	margin-right:25%;
+}
+#header h5{
+	margin: 0px;
+	color: #06f;
 }
 #header ul li a{
 	text-decoration:none;
