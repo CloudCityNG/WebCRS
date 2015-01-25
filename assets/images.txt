@@ -4,3 +4,6 @@ Just for information. Assets folder will have images and graphic files
 -crs logo big.png
 -crs logo.png
 -uclid.png
+-enrollment.png
+-registration.png
+-logout.png

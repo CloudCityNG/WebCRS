@@ -1,0 +1,68 @@
+body{
+	background-color:#eeeeee;
+	font-family: Consolas;
+}
+#header{
+	border-radius: 5px;
+	padding: 10px;
+	height: 85px;
+	background-color: #f9f9f9;
+}
+#logo{
+	float:left;
+}
+#logo img{
+	padding: 10px;
+}
+#info p{
+	font-family: Arial;
+	color: #888;
+	text-align: left;
+	margin:5px;
+	padding: 5px;
+	letter-spacing: 1.5px;
+}
+#header h2{
+	color: #06f;
+}
+#aside{
+	color:#888;
+	display:block;
+	float:left;
+	clear:both;
+	width:20%;
+}
+#info, #aside #select_course,#filter_year{
+	padding:5px;
+	margin:5px;
+	border: 2px #888888 solid;
+	width: 100%;
+	background-color: #f9f9f9;
+}
+#section a{
+	text-decoration:none;
+}
+#section{
+	float:left;	
+	padding:10px;
+	margin:5px 5px 15px 60px;
+	border: 2px #888888 solid;
+	border-left: 0px;
+	border-right: 0px;
+	width: 70%;
+	height: 404px;
+	background-color: #f9f9f9;
+	font-size: 20px;
+	color: #888;
+}
+#footer{
+	color: #0066ff;
+	clear: both;
+	text-align: center;
+	padding: 5px;
+	background: #f9f9f9;
+}
+#footer img{
+	height: 25px;
+	width: 67px;
+}

@@ -10,6 +10,9 @@ h1,h2, #info{
 	color:#0066ff;
 	text-align: left;
 }
+#main span{
+	color: #888;
+}
 #intro{
 	margin-top: 8%;
 	margin-left: 5%;
@@ -44,5 +47,5 @@ h1,h2, #info{
     outline: none; 
     height:25px; 
     width: 238px; 
-    padding: 5px;
+	padding: 5px;
 }
