@@ -21,29 +21,59 @@ body{
 	padding: 5px;
 	letter-spacing: 1.5px;
 }
-#header ul{	
-	list-style-type:none;
-	padding-top:1%;
-	padding-bottom: 2%;
-	margin-left:15%;
-	margin-right:25%;
-}
 #header h5{
 	margin: 0px;
 	color: #06f;
 }
-#header ul li a{
-	text-decoration:none;
-	color:#ffffff;
-	font-size: 16px;
-	text-align: center;
-	width:120px;
-	height:25px;
-	padding:5px 10px;
-	background:#0066ff;
-	margin-left:1px;
-	display:inline;
+/*style the main menu*/
+.myMenu {
+	margin:10px;
+	padding:25px;
+}
+
+.myMenu li {
+	list-style:none;
 	float:left;
+	width: 150px;
+	font:12px Arial, Helvetica, sans-serif #fff;
+}
+
+.myMenu li a:link, .myMenu li a:visited {
+	display:block;
+	text-decoration:none;
+	background-color:#06F;
+	padding: 0.5em 2em;
+	margin:0;
+	border-right: 1px solid #fff;
+	color:#fff;
+}
+
+.myMenu li a:hover {
+	background-color:#0CF;	
+}
+
+/*style the sub menu*/
+.myMenu li ul {
+	position:absolute;
+	visibility:hidden;
+	border-top:1px solid #fff;
+	width: 150px;
+	margin:0;
+	padding:0;
+}
+
+.myMenu li ul li {
+	display:inline;
+	float:none;
+}
+
+.myMenu li ul li a:link, .myMenu li ul li a:visited {
+	background-color:#06F;
+	width:auto;
+}
+
+.myMenu li ul li a:hover {
+	background-color:#0CF;	
 }
 #footer{
 	color: #0066ff;
