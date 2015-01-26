@@ -51,7 +51,26 @@
 					<tr>	
 						<td>
 							<select id="course">
-								<option value="crypt">Cryptography</option>
+								<?php
+									if(isset($_SESSION['login_user'])){
+										$queCourse = "SELECT course.courseName, person.username
+													FROM course
+													INNER JOIN person
+													ON course.instructorId = person.personId;";
+										$resCourse = mysqli_query($cxn,$queCourse);
+										$nrows = mysqli_num_rows($resCourse);
+										
+										for ($i=0;$i<$nrows;$i++)
+										{
+											$rowCour = mysqli_fetch_assoc($resCourse);
+											extract($rowCour);
+											if($username == $_SESSION['login_user']){
+												echo "<option value='$courseName'>$courseName</option>";
+											}
+										}
+									}
+								?>	
+								
 							</select>
 						</td>
 					</tr>  
