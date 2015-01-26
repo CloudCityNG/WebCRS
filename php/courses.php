@@ -1,5 +1,6 @@
 <?php
 	include('session.php');
+	include('popCourse.php');
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -38,46 +39,34 @@
 		</div>
 		<div id="fade" class="black_overlay"></div>
 		<div id="section">
-			<div class="courseinfo">
-				<div class="course_pic"><p>CORE <br/>COURSE</p></div>	
-				<div class="single_courseinfo">
-					<p class="ccode">CSC 353</p><br/>
-					<p class="cname">Web Technologies</p><br/>
-					<p>It deals with HTML, CSS, JS, XML and DOM concepts</p><br/>
-					<p>Credits: 3 Credits</p><br/>
-					<p>Instructor: Mr. XYZ</p>    	
-				</div>		
-			</div>
-			<div class="courseinfo">
-				<div class="course_pic"><p>CORE <br/>COURSE</p></div>	
-				<div class="single_courseinfo">
-					<p class="ccode">CSC 354</p><br/>
-					<p class="cname">Real Time System</p><br/>
-					<p>It deals with Real Time Systems, their theory and applications</p><br/>
-					<p>Credits: 3 Credits</p><br/>
-					<p>Instructor: Mr. XYZ</p>    	
-				</div>		
-			</div>
+			<?php
+				if(isset($_SESSION['login_user'])){
+					$queCourse = "SELECT course.courseType, course.courseId, 
+										course.courseName, course.courseDescrp, 
+										course.credits, person.fullName
+								FROM course
+								INNER JOIN person
+								ON course.instructorId = person.personId;";
+					$resCourse = mysqli_query($cxn,$queCourse);
+					$nrows = mysqli_num_rows($resCourse);
 					
-			<div class="courseinfo">
-				<div class="course_pic"><p>ELECTIVE<br/>COURSE</p></div>	
-				<div class="single_courseinfo">
-					<p class="ccode">CSC 360</p><br/>
-					<p class="cname">Net Centric Computing</p><br/>
-					<p>It deals with ASP technology and its successor ASP.NET</p><br/>
-					<p>Credits: 3 Credits</p><br/>
-					<p>Instructor: Mr. XYZ</p>   	
-				</div>	
-			</div>		
-			<div class="courseinfo">
-				<div class="course_pic"><p>GENERAL<br/>COURSE</p></div>	
-				<div class="single_courseinfo">
-					<p class="ccode">MTH 104</p><br/>
-					<p class="cname">Calculus and Analytical Geometry</p><br/>
-					<p>It deals with Multivariate Calculus, Conic Sections and Differential Equations</p><br/>
-					<p>Credits: 3 Credits</p><br/>
-					<p>Instructor: Mr. XYZ</p>   	
-				</div>		
+					for ($i=0;$i<$nrows;$i++)
+					{
+						$rowCour = mysqli_fetch_assoc($resCourse);
+						extract($rowCour);
+						echo "<div class='courseinfo'>
+								<div class='course_pic'><p>$courseType <br/>COURSE</p></div>	
+								<div class='single_courseinfo'>
+									<p class='ccode'>$courseId</p><br/>
+									<p class='cname'>$courseName</p><br/>
+									<p>$courseDescrp</p><br/>
+									<p>Credits: $credits Credits</p><br/>
+									<p>Instructor: $fullName</p>    	
+								</div>		
+							</div>";
+					}
+				}	
+			?>
 			</div>
 		</div>
 		
