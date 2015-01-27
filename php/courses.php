@@ -1,6 +1,5 @@
 <?php
 	include('session.php');
-	include('popCourse.php');
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -41,33 +40,35 @@
 		<div id="section">
 			<?php
 				if(isset($_SESSION['login_user'])){
-					$queCourse = "SELECT course.courseType, course.courseId, 
-										course.courseName, course.courseDescrp, 
-										course.credits, person.fullName
-								FROM course
-								INNER JOIN person
-								ON course.instructorId = person.personId;";
-					$resCourse = mysqli_query($cxn,$queCourse);
-					$nrows = mysqli_num_rows($resCourse);
-					
-					for ($i=0;$i<$nrows;$i++)
-					{
-						$rowCour = mysqli_fetch_assoc($resCourse);
-						extract($rowCour);
-						echo "<div class='courseinfo'>
-								<div class='course_pic'><p>$courseType <br/>COURSE</p></div>	
-								<div class='single_courseinfo'>
-									<p class='ccode'>$courseId</p><br/>
-									<p class='cname'>$courseName</p><br/>
-									<p>$courseDescrp</p><br/>
-									<p>Credits: $credits Credits</p><br/>
-									<p>Instructor: $fullName</p>    	
-								</div>		
-							</div>";
+					if (!isset($_POST['search_button'])){
+						$queCourse = "SELECT course.courseType, course.courseId, 
+											course.courseName, course.courseDescrp, 
+											course.credits, person.fullName
+									FROM course
+									INNER JOIN person
+									ON course.instructorId = person.personId;";
+						$resCourse = mysqli_query($cxn,$queCourse);
+						$nrows = mysqli_num_rows($resCourse);
+						
+						for ($i=0;$i<$nrows;$i++)
+						{
+							$rowCour = mysqli_fetch_assoc($resCourse);
+							extract($rowCour);
+							echo "<div class='courseinfo'>
+									<div class='course_pic'><p>$courseType <br/>COURSE</p></div>	
+									<div class='single_courseinfo'>
+										<p class='ccode'>$courseId</p><br/>
+										<p class='cname'>$courseName</p><br/>
+										<p>$courseDescrp</p><br/>
+										<p>Credits: $credits Credits</p><br/>
+										<p>Instructor: $fullName</p>    	
+									</div>		
+								</div>";
+						}
 					}
 				}	
+				include('search.php');
 			?>
-			</div>
 		</div>
 		
 		<div id="info">
@@ -76,8 +77,10 @@
 				courses by code or name, and plan for your future registrations.</p>
 		</div>
 		<div id="aside">
-			<input id="search" type="text" name="search" placeholder="search..." autofocus="autofocus"/>
-			<input id="search_button" type="button" value="Search"/>
+			<form method="post" action="courses.php">
+				<input id="search" type="text" name="search" placeholder="search..." autofocus="autofocus" required="required"/>
+				<input id="search_button" name="search_button" type="submit" value="Search"/>
+			</form>
 		</div>
 		<div id="footer">
 			<p>&copy;Dixit Bhatta, Anush Shrestha 2015. Powered By:<img src="../assets/uclid.png" alt="uclid"/></p>
