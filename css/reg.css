@@ -63,6 +63,16 @@ p{
 .ccode,.cname{
 	font-weight: bold;
 }
+#form{
+	display:inline;
+}
+.filter{
+	background-color:#0066ff;
+	font-family: Consolas;
+	border:0px;
+	border-radius:3px;
+	color:#fff;
+}
 td{
 	width:120px;
 }
