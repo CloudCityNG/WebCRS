@@ -8,6 +8,16 @@
 	clear:both;
 	width:20%;
 }
+#form{
+	display:inline;
+}
+.filter{
+	background-color:#0066ff;
+	font-family: Consolas;
+	border:0px;
+	border-radius:3px;
+	color:#fff;
+}
 
 #info, #aside #select_course,#filter_year{
 	padding:5px;
