@@ -2,15 +2,26 @@ body{
 	background-color:#eeeeee;
 	font-family: Consolas;
 }
-#header{
+
+#wrapper {
+	margin-right: auto;
+	margin-left: auto;
+	width: 960px;
+}
+#header {
+	margin-right: 10px;
+	margin-left: 10px;
+	width: 940px;
 	border-radius: 5px;
-	padding: 10px;
+	height: 100px;
 	background-color: #f9f9f9;
 }
 #logo{
 	float:left;
 }
 #logo img{
+	max-width: 100%;
+	height: auto;
 	padding: 10px;
 }
 #info p{
@@ -77,10 +88,14 @@ body{
 }
 #footer{
 	color: #0066ff;
-	clear: both;
 	text-align: center;
-	padding: 5px;
+	padding-top:5px;
+	padding-bottom:5px;
 	background: #f9f9f9;
+	margin-right: 10px;
+	margin-left: 10px;
+	clear: both;
+	width: 940px;
 }
 #footer img{
 	height: 25px;
