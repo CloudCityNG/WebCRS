@@ -48,6 +48,12 @@ p{
 	border-radius:7px;
 	border:0px;
 	padding-bottom::10px;
+	display:table
+}
+#section .course_pic p{
+display: table-cell;
+vertical-align: middle;
+
 }
 #section .single_courseinfo{
 	height:100%;
