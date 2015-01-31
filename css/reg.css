@@ -61,10 +61,21 @@ p{
 	width:780px;
 	background-color: #ffffff;
 	border-radius: 7px;
+	border: 1px solid white;
 }
-#section .single_courseinfo p{
+#section .single_courseinfocollector{
+	margin-top: 10px;
+}
+#section .single_courseinfocollector p{
 	text-align: left;
 	display:inline;
+	margin-top:6px;
+}
+#section .radio {
+	line-height: 18px;
+}
+input[type="radio"]{
+    vertical-align: top;   
 }
 .ccode,.cname{
 	font-weight: bold;
