@@ -1,12 +1,12 @@
-#header p{
-	width: 96%;
-}
 #aside{
 	color:#888;
-	display:block;
-	float:left;
-	clear:both;
-	width:20%;
+	margin-top:5px;
+	margin-right: 10px;
+	margin-left: 10px;
+	float: left;
+	width: 280px;
+	border: 2px #888888 solid;
+	background-color: #f9f9f9;
 }
 #form{
 	display:inline;
@@ -22,27 +22,30 @@
 #info, #aside #select_course,#filter_year{
 	padding:5px;
 	margin:5px;
-	border: 2px #888888 solid;
-	width: 100%;
-	background-color: #f9f9f9;
+	width: 90%;
 }
 
 #section{
-	float:left;	
-	padding:5px;
-	margin:5px 5px 15px 60px;
 	border: 2px #888888 solid;
 	border-left: 0px;
 	border-right: 0px;
-	width: 74%;
-	height: 355px;
 	background-color: #f9f9f9;
-	overflow-y: scroll;
+	font-size: 20px;
+	color: #888;
+	height:362px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-right: 10px;
+	float: right;
+	padding: 10px;
+	margin-left: 10px;
+	width: 600px;
+	overflow-y:scroll;
 }
 
 #section #record_info{
 	margin: 10px;
-	margin-left: 55px;
+	margin-left:30px;
 	width:95%;
 }
 #section table {
@@ -50,29 +53,31 @@
 	text-align: center;
 	border-collapse:collapse;
 	table-layout:fixed;
+	font-size: 18px;
 
 }
 #section table td{
-	padding:5px;
+	padding:2px;
 	border-bottom: 2px solid #f9f9f9;
-	border-radius: 5px;
+	border-radius: 2px;
 	width:30%;
 	background-color: #ffffff;
 	color:#888888;
 }
 #section table th{
-	padding:5px;
-	border-radius: 5px;
+	padding:2px;
+	border-radius: 2px;
 	background-color: #33cc33;
 	color: #ffffff;
 }
 
 #total{
-	border-radius: 5px;
+	border-radius: 2px;
 	background-color: #33cc33;
 	color:#ffffff;
 	width: 200px;
-	padding: 5px;
+	padding: 2px 5px 2px 5px;
+	font-size: 18px;
 }
 #course{
 	font-family: Consolas;
@@ -85,6 +90,16 @@
 #aside td{
 	width: 250px;;
 }
+#button{
+	text-align: center;
+	padding-top:5px;
+	padding-bottom:5px;
+	margin-right: 10px;
+	margin-left: 10px;
+	margin-bottom: 5px;
+	clear: both;
+	width: 940px;
+}
 #summary{
 	background-color:#0066ff;
 	border:0px;
@@ -94,9 +109,5 @@
 	font-size:16px;
 	border-radius:2px;
 	color:#ffffff;
-	margin-bottom: 3px;
 	padding:5px;
-}
-p{
-	text-align:center;
 }
