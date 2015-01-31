@@ -109,13 +109,14 @@
 								extract($rowCour);
 								if($availability != 0){
 									echo "<div class='courseinfo'>
-											<div class='course_pic'><p>$courseType <br/>COURSE</p></div>	
+											<div class='course_pic'><p>$courseType<br/>COURSE</p></div>	
 											<div class='single_courseinfo'>
-												<p class='ccode'>$courseId</p><br/>
-												<p class='cname'>$courseName</p><br/>
+												<div class='single_courseinfocollector'>
+												<p class='ccode'>$courseId : $courseName</p><br/>
 												<p>$courseDescrp</p><br/>
 												<p>Credits: $credits Credits</p><br/>
-												<p>Pick this course:<input type='radio' name='check_course[]' value='$courseId'/></p> 	
+												<p class='radio'>Enroll:<input  type='radio' name='check_course[]' value='$courseId'/><p> 	
+												</div>
 											</div>		
 										</div>";
 								}
