@@ -1,44 +1,46 @@
-#header p{
-	width: 94%;
-}
-#aside{
-	color:#888;
-	display:block;
-	float:left;
-	clear:both;
-	width:20%;
-}
 p{
 	text-align: center;
 }
-#info, #aside #filter_course,#filter_year{
-	padding:5px;
-	margin:5px;
+#aside{
+	color:#888;
+	margin-top:5px;
+	margin-right: 10px;
+	margin-left: 10px;
+	float: left;
+	width: 220px;
 	border: 2px #888888 solid;
-	width: 100%;
 	background-color: #f9f9f9;
 }
+#aside table{
+	padding-left: 10px;
+}
+
 #section{
-	float:left;	
-	width:74%;
-	height: 369px;
-	padding: 0px;
-	margin: 5px 0px 5px 60px;
 	border: 2px #888888 solid;
-	border-right: 0px;
 	border-left: 0px;
+	border-right: 0px;
 	background-color: #f9f9f9;
-	overflow-y: scroll;
+	font-size: 20px;
+	color: #888;
+	height:355px;
+	margin-top: 5px;
+	margin-bottom: 15px;
+	margin-right: 10px;
+	float: right;
+	padding: 10px;
+	margin-left: 10px;
+	width: 670px;
+	overflow-y:scroll;
 }
 #section .courseinfo{
 	height:100px;
-	width:90%;
-	margin:	10px;
-	margin-left: 35px;
-	padding: 5px;
+	width:95%;
+	margin-left: 15px;
+	padding: 10px;
 }
 #section .course_pic{
 	float:left;
+	font-size: 16px;
 	width:100px;
 	height:100%;
 	background:#33cc33;
@@ -46,36 +48,20 @@ p{
 	border-radius:7px;
 	border:0px;
 	padding-bottom::10px;
-	display: table; 
 }
-#section .course_pic p{
-	display: table-cell;
-	vertical-align: middle;	
-}
-
 #section .single_courseinfo{
 	height:100%;
 	color:#888;
+	font-size: 16px;
 	margin-left:110px;
 	padding-left: 10px;
-	width:780px;
+	width:510px;
 	background-color: #ffffff;
 	border-radius: 7px;
-	border: 1px solid white;
 }
-#section .single_courseinfocollector{
-	margin-top: 10px;
-}
-#section .single_courseinfocollector p{
+#section .single_courseinfo p{
 	text-align: left;
 	display:inline;
-	margin-top:6px;
-}
-#section .radio {
-	line-height: 18px;
-}
-input[type="radio"]{
-    vertical-align: top;   
 }
 .ccode,.cname{
 	font-weight: bold;
@@ -96,6 +82,15 @@ td{
 th{
 	text-align:left;
 }
+#button{
+	text-align: center;
+	padding-bottom:5px;
+	margin-right: 10px;
+	margin-left: 10px;
+	margin-bottom: 7px;
+	clear: both;
+	width: 940px;
+}
 #register{
 	background-color:#0066ff;
 	font-family: Consolas;
@@ -104,7 +99,5 @@ th{
 	width: 140px;
 	height: 40px;
 	border-radius:3px;
-	margin-top: 9px;
-	margin-bottom:0px;
 	color:#fff;
 }

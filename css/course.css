@@ -5,17 +5,21 @@ p{
 	font-weight: bold;
 }
 #section{
-	clear: both;
-	float:left;	
-	width:70%;
-	height: 400px;
-	padding: 5px;
-	margin: 5px 5px 29px 5px;
 	border: 2px #888888 solid;
 	border-left: 0px;
-	border-right:0px;
+	border-right: 0px;
 	background-color: #f9f9f9;
-	overflow-y: scroll;
+	font-size: 20px;
+	color: #888;
+	height:400px;
+	margin-top: 5px;
+	margin-bottom: 22px;
+	margin-right: 10px;
+	float: left;
+	padding: 10px;
+	margin-left: 10px;
+	width: 670px;
+	overflow-y:scroll;
 }
 #section .courseinfo{
 	height:100px;
@@ -26,6 +30,7 @@ p{
 }
 #section .course_pic{
 	float:left;
+	font-size: 16px;
 	width:100px;
 	height:100%;
 	background:#33cc33;
@@ -37,9 +42,10 @@ p{
 #section .single_courseinfo{
 	height:100%;
 	color:#888;
+	font-size: 16px;
 	margin-left:110px;
 	padding-left: 10px;
-	width:760px;
+	width:510px;
 	background-color: #ffffff;
 	border-radius: 7px;
 }
@@ -48,8 +54,9 @@ p{
 	display:inline;
 }
 #search{
-	width: 75%;
+	width: 50%;
 	padding: 5px;
+	margin: 5px 0px 5px 10px;
 }
 #search_button{
 	font-family:Consolas;
@@ -60,12 +67,12 @@ p{
 	border-radius: 5px;
 }
 #aside,#info{
-	height:100%;
-	width:25%;
-	margin:5px;
-	border: 2px solid #888888;
+	color:#888;
+	margin-top:5px;
+	margin-right: 10px;
+	margin-left: 10px;
+	float: right;
+	width: 220px;
+	border: 2px #888888 solid;
 	background-color: #f9f9f9;
-	display:block;
-	float:right;
-	padding:10px;
 }

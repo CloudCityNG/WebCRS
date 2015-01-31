@@ -2,9 +2,16 @@ body{
 	background-color:#eeeeee;
 	font-family: Consolas;
 }
-#header{
+#wrapper {
+	margin-right: auto;
+	margin-left: auto;
+	width: 960px;
+}
+#header {
+	margin-right: 10px;
+	margin-left: 10px;
+	width: 940px;
 	border-radius: 5px;
-	padding: 10px;
 	height: 85px;
 	background-color: #f9f9f9;
 }
@@ -12,6 +19,8 @@ body{
 	float:left;
 }
 #logo img{
+	max-width: 100%;
+	height: auto;
 	padding: 10px;
 }
 #info p{
@@ -22,45 +31,55 @@ body{
 	padding: 5px;
 	letter-spacing: 1.5px;
 }
-#header h2{
+#header h4{
 	color: #06f;
+	padding: 30px;
+	margin:0px;
 }
 #aside{
 	color:#888;
-	display:block;
-	float:left;
-	clear:both;
-	width:20%;
+	margin-top:5px;
+	margin-right: 10px;
+	margin-left: 10px;
+	float: left;
+	width: 220px;
+	border: 2px #888888 solid;
+	background-color: #f9f9f9;
 }
-#info, #aside #select_course,#filter_year{
+#info{
 	padding:5px;
 	margin:5px;
-	border: 2px #888888 solid;
 	width: 100%;
-	background-color: #f9f9f9;
 }
 #section a{
 	text-decoration:none;
 }
 #section{
-	float:left;	
-	padding:10px;
-	margin:5px 5px 15px 60px;
 	border: 2px #888888 solid;
 	border-left: 0px;
 	border-right: 0px;
-	width: 70%;
-	height: 404px;
 	background-color: #f9f9f9;
 	font-size: 20px;
 	color: #888;
+	height:432px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-right: 10px;
+	float: right;
+	padding: 10px;
+	margin-left: 10px;
+	width: 660px;
 }
 #footer{
 	color: #0066ff;
-	clear: both;
 	text-align: center;
-	padding: 5px;
+	padding-top:5px;
+	padding-bottom:5px;
 	background: #f9f9f9;
+	margin-right: 10px;
+	margin-left: 10px;
+	clear: both;
+	width: 940px;
 }
 #footer img{
 	height: 25px;

@@ -13,19 +13,28 @@ h1,h2, #info{
 #main span{
 	color: #888;
 }
+#wrapper {
+	margin-top: 150px;
+	margin-right: auto;
+	margin-left: auto;
+	width: 960px;
+}
 #intro{
-	margin-top: 8%;
-	margin-left: 5%;
-	width: 50%;
-	float:left;
+	margin-top: 50px;
+	margin-right: 10px;
+	float: left;
+	margin-left: 10px;
+	width: 600px;
+	background-color:
 }
 #main{
-	padding: 5%;
-	margin-left:60%;
-	margin-top: 8%;
 	border: 2px #888888 solid;
-	width: 250px;
 	background-color: #f9f9f9;
+	margin-right: 10px;
+	margin-left: 10px;
+	float: right;
+	padding: 30px;
+	width: 250px;
 }
 #signin{
 	border-radius: 2px;

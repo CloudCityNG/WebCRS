@@ -21,8 +21,7 @@
 								<p class='ccode'>$courseId</p><br/>
 								<p class='cname'>$courseName</p><br/>
 								<p>$courseDescrp</p><br/>
-								<p>Credits: $credits Credits</p><br/>
-								<p>Instructor: $fullName</p>    	
+								<p>Credits: $credits Credits &nbsp;&nbsp;Instructor: $fullName</p>  	
 							</div>		
 						</div>";
 					$flag=1;

@@ -46,14 +46,13 @@
 						if($courseType==$type[0] || $courseType==$type[1] || $courseType==$type[2] ||
 							$semester==$year[0] || $semester==$year[1] || $semester==$year[2] || $semester==$year[3]){
 							echo "<div class='courseinfo'>
-											<div class='course_pic'><p>$courseType<br/>COURSE</p></div>	
+											<div class='course_pic'><p>$courseType <br/>COURSE</p></div>	
 											<div class='single_courseinfo'>
-												<div class='single_courseinfocollector'>
-												<p class='ccode'>$courseId : $courseName</p><br/>
+												<p class='ccode'>$courseId</p><br/>
+												<p class='cname'>$courseName</p><br/>
 												<p>$courseDescrp</p><br/>
-												<p>Credits: $credits Credits</p><br/>
-												<p class='radio'>Enroll:<input  type='radio' name='check_course[]' value='$courseId'/><p> 	
-												</div>
+												<p>Credits: $credits Credits&nbsp;&nbsp;
+													Pick this course:<input type='radio' name='check_course[]' value='$courseId'/></p>	
 											</div>		
 										</div>";
 							$flag=1;

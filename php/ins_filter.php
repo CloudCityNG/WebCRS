@@ -61,8 +61,8 @@
 					$rowStu = mysqli_fetch_assoc($resStu);
 					extract($rowStu);
 					//now display
-					if($course==$selectOption ||
-						$year==$years[0] || $year==$years[1] || $year==$years[2] || $year==$years[3]){
+					if($course==$selectOption &&
+						($year==$years[0] || $year==$years[1] || $year==$years[2] || $year==$years[3])){
 						echo "<tr>
 								<td>$fullName</td>  
 								<td>&nbsp;&nbsp;$year</td>
