@@ -7,3 +7,4 @@ Just for information. Assets folder will have images and graphic files
 -enrollment.png
 -registration.png
 -logout.png
+-close.png
