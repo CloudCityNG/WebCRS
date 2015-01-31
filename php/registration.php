@@ -71,6 +71,7 @@
 					<table>
 						<tr>
 							<th>FILTER YEAR</th>
+							 <th><input class="filter" type="submit" value="Filter" name="filter"/></th>
 						</tr>
 						<tr>
 							<td>First</td><td><input name="year[]" type="checkbox" value="1"/></td>
