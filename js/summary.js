@@ -7,4 +7,9 @@ function printDiv(divName) {
      window.print();
 	//change back to original contents
      document.body.innerHTML = originalContents;
+     //after previous content is added to document. body
+     //page needs to be reloated
+     //post method reload ask for user verification
+     //code below reloads page my get method in background
+      window.location.href = window.location.pathname + window.location.search;
 }
